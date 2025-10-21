@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <main>
+        <h1>Imagens dinâmicas</h1>
+        <P>Tntente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</P>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem dinamica funciona sim">
+        </picture>
+        <h1>Reproduzinho Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <audio preload="auto" autoplay controls loop>
+            <source src="midia/textme-records.mp3" type="audio/mpeg">
+            <source src="midia/textme-records.ogg" type="audio/ogg">
+            <source src="midia/textme-records.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/textme-records.mp3">Clique aqui para baixar o arquivo</a></p>
+        </audio>
+        <audio preload="auto" autoplay controls loop>
+            <source src="midia/silent-partiner.mp3" type="audio/mpeg">
+            <source src="midia/silent-partiner.ogg" type="audio/ogg">
+            <source src="midia/silent-partiner.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduziro o áudio. <a href="midia/silent-partiner.mp3">Clique aqui para baixar o arquivo</a></p>
+        </audio>
+    </main>
+</body>
+</html>
